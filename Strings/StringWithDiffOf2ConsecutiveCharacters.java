@@ -26,4 +26,4 @@ public class StringWithDiffOf2ConsecutiveCharacters {
 }
 
 // TC = O(N)
-// SC = O(N)
+// SC = O(N) + O(N) = O(N) for storing the ans and toString() function.

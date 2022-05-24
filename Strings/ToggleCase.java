@@ -25,4 +25,4 @@ public class ToggleCase {
 }
 
 // TC = O(N)
-// SC = O(str.length()) for ans output
+// SC = O(str.length()) for ans output.
