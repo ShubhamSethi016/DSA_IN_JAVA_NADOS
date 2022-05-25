@@ -1,9 +1,10 @@
 {
     "java.project.sourcePaths": [
+        "Strings",
         "Patterns",
         "FunctionsAndArrays",
         "BinarySearch",
         "2DArrays",
-        "Strings"
+        "Recursion_Level1"
     ]
 }
