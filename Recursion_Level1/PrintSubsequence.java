@@ -22,3 +22,6 @@ public class PrintSubsequence {
     }
 
 }
+
+// TC = O(2^N)
+// SC = O(1)
