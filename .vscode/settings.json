@@ -1,10 +1,11 @@
 {
     "java.project.sourcePaths": [
         "Strings",
+        "Recursion_Level1",
         "Patterns",
         "FunctionsAndArrays",
         "BinarySearch",
         "2DArrays",
-        "Recursion_Level1"
+        "SortingProblemsAlgo"
     ]
 }

@@ -11,7 +11,7 @@ public class TargetSumSubsets {
         }
         int target = scn.nextInt();
         
-        printTargetSumSubsets(arr,0,"",target,target);
+        printTargetSumSubsets(arr,0,"",0,target);
         scn.close();
     }
 
@@ -19,21 +19,24 @@ public class TargetSumSubsets {
     // sos is sum of subset
     // tar is target
     public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
-        if(sos<0){
+        if(sos>tar){
             return;
         }
 
         if(idx == arr.length){
-            if(sos == 0 && idx == arr.length+1){
+            if(sos == tar){
                 System.out.println(set + ".");
             }
             
             return;
         }
         
-        printTargetSumSubsets(arr,idx+1,set+arr[idx],sos-arr[idx],tar); 
+        printTargetSumSubsets(arr,idx+1,set + arr[idx] + ", ",sos+arr[idx],tar);
         printTargetSumSubsets(arr,idx+1,set,sos,tar);
        
     }
 
 }
+
+// TC = O(2^N)
+// SC = O(1)
