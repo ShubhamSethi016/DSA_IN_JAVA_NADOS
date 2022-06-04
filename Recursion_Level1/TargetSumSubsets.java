@@ -24,16 +24,14 @@ public class TargetSumSubsets {
         }
 
         if(idx == arr.length){
-            if(sos == 0){
+            if(sos == 0 && idx == arr.length+1){
                 System.out.println(set + ".");
             }
             
             return;
         }
-        if(arr[idx]<sos){
-            printTargetSumSubsets(arr,idx+1,set+arr[idx],sos-arr[idx],tar);            
-        }
-
+        
+        printTargetSumSubsets(arr,idx+1,set+arr[idx],sos-arr[idx],tar); 
         printTargetSumSubsets(arr,idx+1,set,sos,tar);
        
     }
