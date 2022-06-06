@@ -1,19 +1,19 @@
 import java.util.Scanner;
 
-public class SelectionSort {
+public class BubbleSort {
 
-  public static void selectionSort(int[] arr) {
+  public static void bubbleSort(int[] arr) {
     //write your code here
     int n = arr.length;
-    for(int i=0;i<n-1;i++){
-      int minIdx = i;
-      for(int j=i+1;j<n;j++){
-        if(isSmaller(arr,j,minIdx) == true){
-          minIdx = j;
-        }
+    for(int i=0;i<n;i++){
+      for(int j=1;j<n-i;j++){
+        int idx = j-1;
+          if(isSmaller(arr,j,idx) == true){
+            swap(arr,j,idx);
+          }
       }
-      swap(arr,i,minIdx);
     }
+    
   }
 
   // used for swapping ith and jth elements of array
@@ -47,15 +47,12 @@ public class SelectionSort {
         for (int i = 0; i < n; i++) {
           arr[i] = scn.nextInt();
         }
-        selectionSort(arr);
+        bubbleSort(arr);
         print(arr);
     }
   }
 
 }
 
-// Worst TC = O(N^2) when array is reverse sorted
-// Best TC = O(N) when array is already sorted
-// Average TC = O(N^2)
-
-// SC = O(1) no extra space is used.
+// TC = O(N^2)
+// SC = O(1)
