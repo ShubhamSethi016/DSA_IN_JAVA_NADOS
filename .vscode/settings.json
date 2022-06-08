@@ -1,12 +1,13 @@
 {
     "java.project.sourcePaths": [
         "Strings",
+        "StacksAndQueues",
         "SortingProblemsAlgo",
         "Recursion_Level1",
         "Patterns",
         "FunctionsAndArrays",
         "BinarySearch",
         "2DArrays",
-        "StacksAndQueues"
+        "LinkedList"
     ]
 }
