@@ -5,9 +5,10 @@
         "SortingProblemsAlgo",
         "Recursion_Level1",
         "Patterns",
+        "LinkedList",
         "FunctionsAndArrays",
         "BinarySearch",
         "2DArrays",
-        "LinkedList"
+        "Generic_Tree"
     ]
 }
