@@ -8,8 +8,9 @@
         "LinkedList",
         "Generic_Tree",
         "FunctionsAndArrays",
+        "Binary_Tree",
         "BinarySearch",
         "2DArrays",
-        "Binary_Tree"
+        "BST"
     ]
 }
