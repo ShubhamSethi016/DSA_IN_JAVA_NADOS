@@ -12,6 +12,7 @@
         "BinarySearch",
         "BST",
         "2DArrays",
-        "HashMap_Heaps"
+        "HashMap_Heaps",
+        "Graph"
     ]
 }
