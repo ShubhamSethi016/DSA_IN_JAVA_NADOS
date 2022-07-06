@@ -26,11 +26,11 @@ public class DynamicStack {
     // change the code of this function according to question
     void push(int val) {
       if (tos == data.length - 1) {
-        int[] ndata = new int[2 * data.length];
-        for (int i = 0; i < data.length; i++) {
-          ndata[i] = data[i];
+        int[] temp = new int[2*data.length];
+        for (int i = 0;i<data.length;i++) {
+          temp[i] = data[i];
         }
-        data = ndata;
+        data = temp;
       }
 
       tos++;
@@ -87,3 +87,6 @@ public class DynamicStack {
     }
   }
 }
+
+// TC = O(N);
+// SC = O(N); to add more elements when arr is full(temp arr of double the original size HENCE O(N)).
