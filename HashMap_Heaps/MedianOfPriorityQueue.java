@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
-public class Median {
+public class MedianOfPriorityQueue {
 
   public static class MedianPriorityQueue {
     PriorityQueue< Integer> left;
@@ -21,10 +21,6 @@ public class Median {
         left.add(val);
       }
 
-      handleBalance();
-    }
-
-    private void handleBalance() {
       if (left.size() - right.size() == 2) {
         right.add(left.remove());
       } else if (right.size() - left.size() == 2) {
@@ -85,3 +81,6 @@ public class Median {
     }
   }
 }
+
+// TC = O(logN) for add() & remove() AND O(1) for peek() & size();
+// SC = O(1);
